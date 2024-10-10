@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  scrollbar-width: none; /* FF */
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -19,6 +20,9 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Chrome & Edge */
 }
 
 

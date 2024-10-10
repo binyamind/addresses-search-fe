@@ -1,7 +1,7 @@
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex flex-col items-center w-screen h-screen overflow-x-hidden overflow-y-hidden relative ">
-      <div className="flex flex-col w-full h-full items-center mt-[50px]">{children}</div>
+    <div className="flex flex-col items-center h-screen overflow-x-hidden overflow-y-visible">
+      <div className="flex flex-col w-screen h-screen items-center  mt-[50px] flex-1">{children}</div>
     </div>
   );
 };

@@ -32,7 +32,7 @@ export const MainPage = () => {
   );
   if (isFetching) return <>Loading...</>;
   return (
-    <div className="flex flex-col w-[80%]">
+    <div className="flex flex-col w-[80%] ">
       <h1 className="mt-16px self-center text-[26px]">
         אינדקס חיפוש רחוב בבאר שבע
       </h1>
