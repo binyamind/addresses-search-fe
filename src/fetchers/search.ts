@@ -9,12 +9,13 @@ export const requestSearch = async ({
   data: Array<ResponseAddress>;
 }> => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [_, q, searchSpec] = queryKey;
+  const [_, q, searchSpec, filters] = queryKey;
   return await request({
     url: "/search",
     params: {
       q,
       searchSpec,
+      filters,
     },
   });
 };

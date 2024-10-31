@@ -4,13 +4,14 @@ import { SearchAddressTerm } from "@/models/SearchAddressTerm";
 
 interface Props {
   onValueChange: (e: string) => void;
+  defaultValue: string | any;
 }
 
-export const StyledRadioButton = ({ onValueChange }: Props) => {
+export const StyledRadioButton = ({ onValueChange, defaultValue }: Props) => {
   return (
     <RadioGroup
       onValueChange={onValueChange}
-      defaultValue={SearchAddressTerm.main}
+      defaultValue={defaultValue}
       className="flex gap-5 w-[35%]  pr-[4px] h-[30px]"
     >
       <div className="flex items-center space-x-2">

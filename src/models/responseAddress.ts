@@ -10,13 +10,23 @@ export type ResponseAddress = Pick<
   | "neighbourhood"
   | "secondary"
   | "type"
-> & { id: string | undefined };
+> & { id: string | undefined; };
+
+export interface AvailableFilters  {
+  availableType?: Array<string>;
+  availableNeighbourhoods?: Array<string>;
+};
+
+export interface ResponseAddressWithFilters {
+  addresses: Array<ResponseAddress>;
+  availableFilters: AvailableFilters;
+}
 
 export interface BEResponse {
   result: PluginRespone;
 }
 export interface PluginRespone {
   result: {
-    data: Array<ResponseAddress>;
+    data: Array<ResponseAddressWithFilters>;
   };
 }

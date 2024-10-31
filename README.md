@@ -44,7 +44,8 @@ To start the development server, run:
 npm run dev
 ```
 Open your browser and navigate to http://localhost:5173 (or the port specified in the terminal) to view your app.
-
+# 4. Filters
+  This project has a filters feature where after the search results the user could filter the resuls by neighbourhood or type
 ## Features
 
 - UI components powered by Shadcn UI
